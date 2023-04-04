@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background: #FFD900;
+}
+
+#logo {
+    margin-left: 58px;
+    margin-top: 27px;
+    margin-bottom: 28px;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#left {
+    background: #514988;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 700px;
+}
+
+#title h1 {
+    color: #F3C61F;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 31px;
+}
+
+#title h2 {
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.timer{
+    margin-top: 31px;
+    display: grid;
+    grid-auto-flow: column;
+    color: #514988;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#right {
+    align-items: center;
+    text-align: center;
+    color: #E33881;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 15px;
+}
+
+footer h2 {
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #F3C61F;
+}
+
+.cards {
+    margin-top: 15px;
+    margin-right: 0%;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+footer button {
+    background: #514988;
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 31px;;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    border-style: none;
+    cursor: pointer;
+}
+
+footer button:hover {background-color: #F3C61F}
+
+footer button:active {
+    background-color: #F3C61F;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 600px){
+    /*Menu*/
+    #logo {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+    }
+    main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .timer {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .cards {
+        display: flex;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer button{
+        text-align: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+    }
+}
